@@ -49,7 +49,7 @@ parser.add_argument('--iter_loss', type=int, default=500, help='average loss for
 opt = parser.parse_args()
 
 # USR
-opt.dataroot = '/home/xwhu/dataset/shadow_USR'
+opt.dataroot = '/content/Mask-ShadowGAN/data/USR'
 # SRD
 #opt.dataroot = '/home/xwhu/dataset/SRD'
 # ISTD
