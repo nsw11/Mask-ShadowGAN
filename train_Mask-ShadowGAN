@@ -137,7 +137,7 @@ transforms_ = [#transforms.Resize((opt.size, opt.size), Image.BICUBIC),
 			   transforms.ToTensor(),
 			   transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]
 dataloader = DataLoader(ImageDataset(opt.dataroot, transforms_=transforms_, unaligned=True),
-						batch_size=opt.batchSize, shuffle=True, num_workers=opt.n_cpu,num_workers=2)
+						batch_size=opt.batchSize, shuffle=True,num_workers=2)
 
 # Loss plot
 # logger = Logger(opt.n_epochs, len(dataloader), server='http://137.189.90.150', http_proxy_host='http://proxy.cse.cuhk.edu.hk/', env = 'main')
