@@ -43,8 +43,8 @@ opt = parser.parse_args()
 # opt.im_suf_B = '.jpg'
 
 ### USR
-opt.dataroot_A = '/home/xwhu/dataset/shadow_USR/shadow_test'
-opt.dataroot_B = '/home/xwhu/dataset/shadow_USR/shadow_free'
+opt.dataroot_A = '/content/Mask-ShadowGAN/data/USR/shadow_test'
+opt.dataroot_B = '/content/Mask-ShadowGAN/data/USR/shadow_free'
 
 opt.im_suf_A = '.jpg'
 opt.im_suf_B = '.jpg'
