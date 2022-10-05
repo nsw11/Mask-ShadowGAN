@@ -53,6 +53,8 @@ class Generator(nn.Module):
             in_features = out_features
             out_features = in_features//2
 
+        
+        model += nn.Linear(in_features, out_features)
         # Output layer
         model += [  nn.ReflectionPad2d(3),
                     nn.Conv2d(64, output_nc, 7) ]
